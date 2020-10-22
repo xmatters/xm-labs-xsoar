@@ -12,7 +12,7 @@ Cortex XSOAR is a premier security orchestration tool for keeping organizations 
 
 
 # Pre-Requisites
-* XSOAR 6
+* XSOAR 5 or 6
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
 * [xMatters Agent](https://help.xmatters.com/ondemand/xmodwelcome/xmattersagent/xmatters-agent-topic.htm) - If XSOAR is not available via the public internet, the agent will be needed to facilitate the communication from xMatters to XSOAR.
 
