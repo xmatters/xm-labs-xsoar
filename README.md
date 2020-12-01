@@ -21,7 +21,7 @@ Cortex XSOAR is a premier security orchestration tool for keeping organizations 
 
 
 # How it works
-The `xm-trigger-workflow` command can be inserted into a playbook or executed from the warroom. The various parameters can be passed to the workflow on the xMatters side to target the `recipients` value. Response options on the notifications allow for continuation of the playbook if a `close_task_id` value is passed. 
+The `xm-trigger-workflow` command can be inserted into a playbook or executed from the warroom. The various parameters can be passed to the workflow on the xMatters side to target the `recipients` value. Response options on the notifications allow for continuation or branching of the playbook if a `close_task_id` value is passed. The integration comes with an example playbook showing how to branch based on a user response. 
 
 The `fetch_incidents` functionality queries xMatters for events based on the search criteria and creates incidents in XSOAR for each one. 
 
@@ -50,7 +50,7 @@ The `fetch_incidents` functionality queries xMatters for events based on the sea
 
 
 ## XSOAR set up
-See the full documentation in the [xMatters Integration](https://xsoar.pan.dev/docs/reference/integrations/zoom).
+See the full documentation in the [xMatters Integration](https://xsoar.pan.dev/docs/reference/integrations/xmatters).
 
 # Testing
 The Test button on the integration instance will test the trigger workflow command as well as an API call to the user.
