@@ -49,8 +49,13 @@ The `fetch_incidents` functionality queries xMatters for events based on the sea
 11. Click the gear icon and choose Editor permissions. Add the XSOAR user here as well. 
 
 
-## XSOAR set up
-See the full documentation in the [xMatters Integration](https://xsoar.pan.dev/docs/reference/integrations/xmatters).
+## XSOAR Set Up
+
+1. Navigate to the marketplace and search for "xMatters". Click the **Install** button in the top corner.
+2. Then in the **Settings**, find the xMatters integration and click the **Add instance** button:
+![Add Instance](media/README/xMatters_instance.png)
+3. Enter the appropriate details, including the user created above. Click **Done**.
+4. Associate the **xMatters - Wait For Response** playbook with an incident to trigger an event. 
 
 # Testing
 The Test button on the integration instance will test the trigger workflow command as well as an API call to the user.
