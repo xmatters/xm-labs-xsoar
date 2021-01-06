@@ -28,6 +28,9 @@ The `fetch_incidents` functionality queries xMatters for events based on the sea
 
 # Installation
 
+## xAgent
+For full roundtrip integration, the [xMatters Agent](https://help.xmatters.com/ondemand/xmodwelcome/xmattersagent/xmatters-agent-topic.htm) will facilitate the communication from xMatters to XSOAR. When the agent is installed, then continue. 
+
 ## xMatters set up
 
 ### Create an XSOAR user
@@ -45,6 +48,16 @@ The `fetch_incidents` functionality queries xMatters for events based on the sea
 ![pasted-image](media/README/20201011120933.png)
 
 4. Copy the url and save for later. 
+5. Double click on the **Complete Task and Send Response** step attached to the **Responses** trigger to open the dialog. Then navigate to the **Run Location** tab. 
+
+![pasted-image](media/README/20210106092209.png)
+
+6. Select the appropriate agent from the list, then navigate to the **Endpoint** tab and click the **Edit Endpoints** link.
+7. In the dialog presented, update the **Base URL** to point to the XSOAR front end. 
+
+![pasted-image](media/README/20210106092209.png)
+
+8. Close the dialogs and click the **Components** drop down and select **Constants**. Note the **Cortex XSOAR API Key** constant is where the XSOAR API key will be stored so that xMatters can successfully authenticate.
 9. On the Forms tab, click the **Not Deployed** dropdown next to **Incident** and select Sender Permissions. Add the XSOAR user created above. 
 11. Click the gear icon and choose Editor permissions. Add the XSOAR user here as well. 
 
@@ -55,7 +68,8 @@ The `fetch_incidents` functionality queries xMatters for events based on the sea
 2. Then in the **Settings**, find the xMatters integration and click the **Add instance** button:
 ![Add Instance](media/README/xMatters_instance.png)
 3. Enter the appropriate details, including the user created above. Click **Done**.
-4. Associate the **xMatters - Wait For Response** playbook with an incident to trigger an event. 
+4. Navigate to **Settings** and click the **API Keys** section. Click **Get Your Key** to generate a new key. Add this key to the **Cortext XSOAR API Key** constant in xMatters referenced above. 
+4. Associate the **xMatters - Wait For Response** playbook with an incident to trigger an event. This will depend on the business use case. 
 
 # Testing
 The Test button on the integration instance will test the trigger workflow command as well as an API call to the user.
