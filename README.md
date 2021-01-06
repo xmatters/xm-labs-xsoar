@@ -75,7 +75,7 @@ For full roundtrip integration, the [xMatters Agent](https://help.xmatters.com/o
 The Test button on the integration instance will test the trigger workflow command as well as an API call to the user.
 
 
-![pasted-image](media/README/20201016150133.png)
+![pasted-image](media/README/20210106093703.png)
 
 After pressing the Test button and getting the Success message, a new entry will be displayed in the Activity Stream:
 
