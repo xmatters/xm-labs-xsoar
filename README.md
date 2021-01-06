@@ -57,7 +57,7 @@ For full roundtrip integration, the [xMatters Agent](https://help.xmatters.com/o
 
 ![pasted-image](media/README/20210106092209.png)
 
-8. Close the dialogs and click the **Components** drop down and select **Constants**. Note the **Cortex XSOAR API Key** constant is where the XSOAR API key will be stored so that xMatters can successfully authenticate.
+8. Close the dialogs and click the **Components** drop down in the upper right corner of the canvas and select **Constants**. Note the **Cortex XSOAR API Key** constant is where the XSOAR API key will be stored so that xMatters can successfully authenticate.
 9. On the Forms tab, click the **Not Deployed** dropdown next to **Incident** and select Sender Permissions. Add the XSOAR user created above. 
 11. Click the gear icon and choose Editor permissions. Add the XSOAR user here as well. 
 
